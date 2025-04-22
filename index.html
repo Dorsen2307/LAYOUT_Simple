@@ -4,35 +4,71 @@
     <meta charset="UTF-8">
     <title>Simple</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href='css/boxicons.css' rel='stylesheet'>
-    <link href="css/style.css" rel="stylesheet">
 </head>
-<body style="font-family: Roboto, sans-serif;">
+<body style="--bs-body-font-family: Roboto, sans-serif;">
     <header class="border-bottom border-secondary-subtle" style="font-family: Ubuntu Mono, monospace;">
         <div class="container">
             <div class="row pt-3 pb-3 fs-5">
-                <div class="col-lg-2 col-md-2 d-flex align-items-center">
+                <div class="col-lg-2 col-md-3 col-sm-4 d-flex align-items-center justify-content-center">
                     <img src="image/header/logo_circle.png" alt="">
                     <span class="ms-1 me-1 text-secondary">simple</span>
                     <img src="image/header/logo_ellipse.png" alt="">
                     <img class="ms-1" src="image/header/logo_circle.png" alt="">
                 </div>
 
-                <div class="offset-lg-3 col-lg-6 order-lg-0 order-md-1 col-md-12 d-flex justify-content-between">
-                    <a href="#" class="text-decoration-none text-secondary">Продукция</a>
-                    <a href="#" class="text-decoration-none text-secondary">Материалы</a>
-                    <a href="#" class="text-decoration-none text-secondary">О нас</a>
-                    <a href="#" class="text-decoration-none text-secondary">Контакты</a>
+                <div class="nav offset-lg-3 col-lg-6 d-none d-none d-lg-flex justify-content-between">
+                    <a href="#" class="text-decoration-none text-secondary nav-a">Продукция</a>
+                    <a href="#" class="text-decoration-none text-secondary nav-a">Материалы</a>
+                    <a href="#" class="text-decoration-none text-secondary nav-a">О нас</a>
+                    <a href="#" class="text-decoration-none text-secondary nav-a">Контакты</a>
                 </div>
 
-                <div class="offset-lg-0 col-lg-1 offset-md-8 col-md-2 d-flex justify-content-between">
-                    <a href="#" class="text-secondary"><i class='bx bx-search'></i></a>
-                    <a href="#" class="text-secondary"><i class='bx bx-exit'></i></a>
+                <div class="offset-lg-0 col-lg-1 offset-md-7 col-md-2 offset-sm-6 col-sm-2 d-none d-sm-flex justify-content-between">
+                    <a href="#" class="text-secondary more"><i class='bx bx-search'></i></a>
+                    <a href="#" class="text-secondary more"><i class='bx bx-exit'></i></a>
                 </div>
             </div>
         </div>
     </header>
+    <nav class="border-bottom border-secondary-subtle d-lg-none d-sm-flex d-none">
+        <div class="container">
+            <div class="row pt-3 pb-3 fs-5">
+                <div class="col d-flex justify-content-between">
+                    <a href="#" class="text-decoration-none text-secondary nav-a">Продукция</a>
+                    <a href="#" class="text-decoration-none text-secondary nav-a">Материалы</a>
+                    <a href="#" class="text-decoration-none text-secondary nav-a">О нас</a>
+                    <a href="#" class="text-decoration-none text-secondary nav-a">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="border-bottom border-secondary-subtle d-flex d-sm-none">
+        <div class="container">
+            <div class="row pt-2 pb-1 fs-2">
+                <div class="col-2">
+                    <div class="dropdown">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class='bx bx-menu text-black'></i></a>
+
+                        <ul class="dropdown-menu vw-100">
+                            <li><a class="dropdown-item nav-a" href="#">Продукция</a></li>
+                            <li><a class="dropdown-item nav-a" href="#">Материалы</a></li>
+                            <li><a class="dropdown-item nav-a" href="#">О нас</a></li>
+                            <li><a class="dropdown-item nav-a" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="offset-8 col-2 d-flex d-sm-none justify-content-between">
+                    <a href="#" class="text-secondary more"><i class='bx bx-search'></i></a>
+                    <a href="#" class="text-secondary more"><i class='bx bx-exit'></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <section class="main">
         <div class="container pt-5 pb-5">
@@ -42,7 +78,7 @@
                     <p class="text-body-tertiary" style="font-size: 1.13rem;">
                         Бума́га (предположительно от итал. bombagia, первоисточником же считается иранский) — волокнистый материал с минеральными добавками.
                     </p>
-                    <button class="mt-4 mb-5 btn btn-outline-primary rounded-0" style="--bs-btn-padding-x: 5.6rem; --bs-btn-padding-y: 1.45rem; --bs-btn-font-size: 1.25rem;">Каталог</button>
+                    <button class="mt-4 mb-4 btn btn-outline-primary rounded-0" style="--bs-btn-padding-x: 5.6rem; --bs-btn-padding-y: 1.45rem; --bs-btn-font-size: 1.25rem;">Каталог</button>
                 </div>
                 <div class="col-6"></div>
             </div>
@@ -53,38 +89,62 @@
         <div class="container">
             <div class="row mt-3 pb-5">
 
-                <div class="col">
-                    <div class="d-flex pt-3 border-top border-secondary-subtle align-items-center">
-                        <img src="image/section1/Buissnes%20Cards%20(85x55).png" alt="">
-                        <div class="d-flex flex-column">
-                            <h3 class="fs-6 text-body-secondary m-0">V.1</h3>
-                            <p class="fs-6 text-body-tertiary">
-                                Результат вашего обучения
-                            </p>
+                <div class="col-md-4 col-lg-4 col-sm-4">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="pt-3 border-top border-secondary-subtle">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-6 d-flex d-sm-block justify-content-center">
+                                        <img src="image/section1/Buissnes%20Cards%20(85x55).png" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-6 flex-column">
+                                        <h3 class="fs-6 text-body-secondary m-0">V.1</h3>
+                                        <p class="fs-6 text-body-tertiary">
+                                            Результат вашего обучения
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-lg-4">
-                    <div class="d-flex pt-3 border-top border-secondary-subtle align-items-center">
-                        <img src="image/section1/Buissnes%20Cards%20(85x55).png" alt="">
-                        <div class="d-flex flex-column">
-                            <h3 class="fs-6 text-body-secondary">V.2</h3>
-                            <p class="fs-6 text-body-tertiary">
-                                Результат вашего обучения
-                            </p>
+                <div class="col-md-4 col-lg-4 col-sm-4">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="pt-3 border-top border-secondary-subtle">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-6 d-flex d-sm-block justify-content-center">
+                                        <img src="image/section1/Buissnes%20Cards%20(85x55).png" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-6 flex-column">
+                                        <h3 class="fs-6 text-body-secondary m-0">V.2</h3>
+                                        <p class="fs-6 text-body-tertiary">
+                                            Результат вашего обучения
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-lg-4">
-                    <div class="d-flex pt-3 border-top border-secondary-subtle align-items-center">
-                        <img src="image/section1/Buissnes%20Cards%20(85x55).png" alt="">
-                        <div class="d-flex flex-column">
-                            <h3 class="fs-6 text-body-secondary">V.3</h3>
-                            <p class="fs-6 text-body-tertiary">
-                                Результат вашего обучения
-                            </p>
+                <div class="col-md-4 col-lg-4 col-sm-4">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="pt-3 border-top border-secondary-subtle">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-6 d-flex d-sm-block justify-content-center">
+                                        <img src="image/section1/Buissnes%20Cards%20(85x55).png" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-6 flex-column">
+                                        <h3 class="fs-6 text-body-secondary m-0">V.3</h3>
+                                        <p class="fs-6 text-body-tertiary">
+                                            Результат вашего обучения
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,10 +152,10 @@
             </div> <!-- row -->
 
             <div class="row pt-5">
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-md-6 col-12 d-flex d-md-block justify-content-center">
                     <img class="img-fluid" src="image/section1/Folder%20v8%20Open.png" alt="">
                 </div>
-                <div class="col-lg-4 pt-5">
+                <div class="col-lg-4 col-md-6 col-12">
                     <h2 class="fs-1 lh-1 text-body-secondary">
                         Максимальная белизна
                     </h2>
@@ -113,33 +173,41 @@
     <section class="products">
         <div class="container pt-5 pb-5">
             <div class="row mt-4 mb-3">
-                <div class="col">
-                    <img class="img-fluid" src="image/section2/Frame%20208.png" alt="">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
+                    <div class="d-flex d-sm-block justify-content-center">
+                        <img class="img-fluid" src="image/section2/Frame%20208.png" alt="">
+                    </div>
                     <h3 class="mt-3 mb-0 fs-3 text-secondary">Упаковка</h3>
                     <span class="text-body-tertiary" style="font-size: 0.7rem;">Тираж от 50 штук</span>
-                    <p class="pt-1">Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.</p>
-                    <a href="#" class="text-decoration-none"> Подробнее <i class='bx bx-right-arrow-alt'></i></a>
+                    <p class="pt-1 text-body-tertiary">Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.</p>
+                    <a href="#" class="text-decoration-none more"> Подробнее <i class='bx bx-right-arrow-alt'></i></a>
                 </div>
-                <div class="col">
-                    <img class="img-fluid" src="image/section2/Frame%20209.png" alt="">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
+                    <div class="d-flex d-sm-block justify-content-center">
+                        <img class="img-fluid" src="image/section2/Frame%20209.png" alt="">
+                    </div>
                     <h3 class="mt-3 mb-0 fs-3 text-secondary">Пакеты</h3>
                     <span class="text-body-tertiary" style="font-size: 0.7rem;"> Тираж от 200 штук</span>
-                    <p class="pt-1">С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные расцветки и дизайн.</p>
-                    <a href="#" class="text-decoration-none">Подробнее <i class='bx bx-right-arrow-alt'></i></a>
+                    <p class="pt-1 text-body-tertiary">С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные расцветки и дизайн.</p>
+                    <a href="#" class="text-decoration-none more">Подробнее <i class='bx bx-right-arrow-alt'></i></a>
                 </div>
-                <div class="col">
-                    <img class="img-fluid" src="image/section2/Frame%20211.png" alt="">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
+                    <div class="d-flex d-sm-block justify-content-center">
+                        <img class="img-fluid" src="image/section2/Frame%20211.png" alt="">
+                    </div>
                     <h3 class="mt-3 mb-0 fs-3 text-secondary">Кейсы</h3>
                     <span class="text-body-tertiary" style="font-size: 0.7rem;">Тираж от 30 штук</span>
-                    <p class="pt-1">Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал: прессованная бумага.</p>
-                    <a href="#" class="text-decoration-none"> Подробнее <i class='bx bx-right-arrow-alt'></i></a>
+                    <p class="pt-1 text-body-tertiary">Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал: прессованная бумага.</p>
+                    <a href="#" class="text-decoration-none more"> Подробнее <i class='bx bx-right-arrow-alt'></i></a>
                 </div>
-                <div class="col">
-                    <img class="img-fluid" src="image/section2/Frame%20210.png" alt="">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
+                    <div class="d-flex d-sm-block justify-content-center">
+                        <img class="img-fluid" src="image/section2/Frame%20210.png" alt="">
+                    </div>
                     <h3 class="mt-3 mb-0 fs-3 text-secondary">Другие изделия</h3>
                     <span class="text-body-tertiary" style="font-size: 0.7rem;">Тираж от 100 штук</span>
-                    <p class="pt-1">Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в кратчайшие сроки.</p>
-                    <a href="#" class="text-decoration-none"> Подробнее <i class='bx bx-right-arrow-alt'></i></a>
+                    <p class="pt-1 text-body-tertiary">Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в кратчайшие сроки.</p>
+                    <a href="#" class="text-decoration-none more"> Подробнее <i class='bx bx-right-arrow-alt'></i></a>
                 </div>
             </div>
         </div>
@@ -147,24 +215,24 @@
 
     <section class="brand bg-secondary-subtle">
         <div class="container pt-5 pb-5">
-            <div class="row mt-4 mb-4">
-                <div class="col d-flex align-items-stretch">
-                    <div class="border border-secondary-subtle p-4  d-flex align-items-center">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-12 align-items-stretch mt-3 mb-3">
+                    <div class="border border-secondary-subtle p-4 d-flex justify-content-center">
                         <img src="image/section3/Frame%20226.png" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col d-flex align-items-stretch">
-                    <div class="border border-secondary-subtle p-4  d-flex align-items-center">
+                <div class="col-md-3 col-sm-6 col-12 align-items-stretch mt-3 mb-3">
+                    <div class="border border-secondary-subtle p-4 d-flex justify-content-center">
                         <img src="image/section3/Frame%20225.png" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col d-flex align-items-stretch">
-                    <div class="border border-secondary-subtle p-4  d-flex align-items-center">
+                <div class="col-md-3 col-sm-6 col-12 align-items-stretch mt-3 mb-3">
+                    <div class="border border-secondary-subtle p-4 d-flex justify-content-center">
                         <img src="image/section3/Frame%20224.png" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col d-flex align-items-stretch">
-                    <div class="border border-secondary-subtle p-4 d-flex align-items-center">
+                <div class="col-md-3 col-sm-6 col-12 align-items-stretch mt-3 mb-3">
+                    <div class="border border-secondary-subtle p-4 d-flex justify-content-center">
                         <img src="image/section3/Frame%20223.png" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -175,13 +243,13 @@
     <section class="simple">
         <div class="container pt-5 pb-5">
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <h2 class="lh-1 mt-5 h2 text-secondary">Simple скетчбук</h2>
                     <p class="text-body-tertiary">80 листов, твердая обложка, бумага  Fabriano 200 г/м2. Подойдет и для графики и для акварели. Для самых смелых творческих замыслов!</p>
                     <button class="mt-4 mb-5 btn btn-outline-primary rounded-0" style="--bs-btn-padding-x: 5.6rem; --bs-btn-padding-y: 1.45rem; --bs-btn-font-size: 1.25rem;">Купить</button>
                 </div>
                 
-                <div class="offset-5 col-3 pt-5">
+                <div class="offset-lg-5 col-lg-3 col-md-6 col-sm-12 pt-5">
                     <img src="image/section4/Vector.png" class="mt-5 float-end" alt="">
                 </div>
             </div>
@@ -191,21 +259,32 @@
     <footer class="bg-secondary" style="font-family: Ubuntu Mono, monospace;">
         <div class="container">
             <div class="row pt-3 pb-3 fs-5">
-                <div class="col-2 d-flex align-items-center">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-12 d-flex align-items-center justify-content-center">
                     <img src="image/footer/Circle.png" alt="">
                     <span class="ms-1 me-1 text-white">simple</span>
                     <img src="image/footer/Ellipse.png" alt="">
                     <img class="ms-1" src="image/footer/Circle.png" alt="">
                 </div>
 
-                <div class="offset-7 col-3 d-flex justify-content-between fs-3">
-                    <a href="#" class="text-white d-flex align-items-center text-decoration-none"><i class='bx bxl-facebook-square'></i></a>
-                    <a href="#" class="text-white d-flex align-items-center text-decoration-none"><i class='bx bxl-twitter'></i></a>
-                    <a href="#" class="text-white d-flex align-items-center text-decoration-none"><i class='bx bxl-instagram'></i></a>
-                    <a href="#" class="text-white d-flex align-items-center text-decoration-none"><i class='bx bxl-youtube'></i></a>
+                <div class="offset-lg-7 col-lg-3 offset-md-5 col-md-4 offset-sm-3 col-sm-5 d-none d-sm-flex justify-content-between fs-3">
+                    <a href="#" class="text-white d-flex align-items-center text-decoration-none social"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="#" class="text-white d-flex align-items-center text-decoration-none social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="text-white d-flex align-items-center text-decoration-none social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="text-white d-flex align-items-center text-decoration-none social"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="row pt-3 pb-3 border-top border-secondary-subtle d-flex d-sm-none justify-content-center">
+                <div class="col-8 d-flex justify-content-between fs-3">
+                    <a href="#" class="text-white d-flex align-items-center text-decoration-none social"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="#" class="text-white d-flex align-items-center text-decoration-none social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="text-white d-flex align-items-center text-decoration-none social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="text-white d-flex align-items-center text-decoration-none social"><i class='bx bxl-youtube'></i></a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>

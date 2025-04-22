@@ -1,9 +1,70 @@
-:root {
-    --btn-color: #7875FE;
-    --line1-color: #DDD;
-    --h1-color: #4C5866;
-    --p-color: #85859B;
-    --line2-color: #C0C0C0;
-    --h3-color: #666666;
-    --section1-bg-color: #EBEBEB;
+.nav-a {
+    transition: .3s;
+}
+
+.nav-a:hover {
+    color: #7875FE !important;
+}
+
+.nav-a:focus {
+    color: #4C5866 !important;
+    background-color: #DAD9FB !important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.nav-a:active {
+    color: #4946B4 !important;
+}
+
+.btn {
+    transition: .3s;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #7875FE !important;
+}
+
+.btn:focus {
+    color: #7875FE !important;
+    background-color: #DAD9FB !important;
+}
+
+.btn:active {
+    color: #fff !important;
+    background-color: #4946B4 !important;
+}
+
+.more {
+    color: #7875FE !important;
+}
+
+.more:hover {
+    color: #4946B4 !important;
+}
+
+.more:active {
+    color: #4946B4 !important;
+}
+
+.more:focus {
+    color: #7875FE !important;
+    background-color: #DAD9FB !important;
+}
+
+.social > i {
+    transition: .3s;
+}
+
+.social:hover > i {
+    color: #DAD9FB !important;
+}
+
+.social:active > i {
+    color: #7875FE !important;
+}
+
+.social:focus {
+    border: #7875FE 2px solid !important;
 }
