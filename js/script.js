@@ -54,7 +54,7 @@ function formatInput (elem) {
 }
 
 document.getElementById("search-icon1").addEventListener("click", function(){
-    let divs = {};
+    let divs;
 
     if (window.innerWidth >= 1200) {
         divs = {
@@ -98,7 +98,7 @@ document.getElementById("search-icon1").addEventListener("click", function(){
 });
 
 document.getElementById("search-input1").addEventListener("blur", function() {
-    let divs = {};
+    let divs;
 
     if (window.innerWidth >= 1200) {
         divs = {
